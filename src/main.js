@@ -102,3 +102,15 @@ const scrollUp = () => {
   }
 };
 window.addEventListener("scroll", scrollUp);
+
+/* CHANGE BACKGROUND HEADER */
+const scrollHeader = () => {
+  const header = document.getElementById("header");
+
+  if (this.scrollY >= 50) {
+    header.classList.add("border-b", "border-secondaryColor");
+  } else {
+    header.classList.remove("border-b", "border-secondaryColor");
+  }
+};
+window.addEventListener("scroll", scrollHeader);
